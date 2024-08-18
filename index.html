@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Kadarisman - UI/UX Design | Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .navbar {
+        margin-bottom: 20px;
+      }
+      .navbar-nav .nav-link {
+        transition: color 0.3s;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #ffcc00;
+      }
+      .hero {
+        position: relative;
+        background: url("https://plus.unsplash.com/premium_photo-1661923465953-937e49c9e624?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVpJTIwdXglMjBvZmZpY2V8ZW58MHx8MHx8fDA%3D") no-repeat center
+          center/cover;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        animation: slideIn 1s ease-out;
+      }
+      .hero p {
+        font-size: 1.25rem;
+        animation: slideIn 1s 0.5s ease-out;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+      .card-img-top:hover {
+        transform: scale(1.05);
+      }
+      .card {
+        transition: box-shadow 0.3s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">PT. Kadarisman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="todos.html">Todos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to PT. Kadarisman</h1>
+        <p>Expert UI/UX Design Tailored to Your Needs</p>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container my-5">
+      <h2>Our Services</h2>
+      <div class="row">
+        <!-- Service Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Service 1" />
+            <div class="card-body">
+              <h5 class="card-title">UI Design</h5>
+              <p class="card-text">Creating intuitive and engaging user interfaces that enhance user experience.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Service 2" />
+            <div class="card-body">
+              <h5 class="card-title">UX Research</h5>
+              <p class="card-text">Conducting research to understand user needs and improve overall usability.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://plus.unsplash.com/premium_photo-1661412938808-a0f7be3c8cf1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Service 3" />
+            <div class="card-body">
+              <h5 class="card-title">Prototyping</h5>
+              <p class="card-text">Developing prototypes to visualize and test design concepts before final implementation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container my-5">
+      <h2>My Work</h2>
+      <div class="row">
+        <!-- Portfolio Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG93Y2FzaW5nJTIwVUklMkZVWHxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="Portfolio 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A brief description of this project showcasing UI/UX design excellence.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://media.istockphoto.com/id/1396019181/photo/ux-ui-mobile-apps-user-interface-designs-digital-software-technology-development-concept.webp?b=1&s=612x612&w=0&k=20&c=bVIMeP4sOtbxTQtnDdV89XuY9AncyQIGKrq5kJgzWV8="
+              class="card-img-top"
+              alt="Portfolio 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">A brief description of this project showcasing UI/UX design excellence.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://images.unsplash.com/photo-1720962158813-29b66b8e23e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHVpfGVufDB8fDB8fHww" class="card-img-top" alt="Portfolio 3" />
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">A brief description of this project showcasing UI/UX design excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p>&copy; 2024 PT. Kadarisman. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Order Now Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderModalLabel">Order Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Here is the list/table for ordering services. You can implement this using JavaScript.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9g4wzvEBd2LE5r7W3l7E3qFJpE7R9sD8xD5kFl7Xs4i2z0pu6DE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-VWQ0nGFiwM79vH9T86Eq8PbsUbsBKhIThfjFymk19PczwC0K4CA5DwOFa1Rt1DOrx" crossorigin="anonymous"></script>
+  </body>
+</html>

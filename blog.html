@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - PT. Kadarisman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .blog-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .blog-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .blog-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .blog-card-body {
+        padding: 1rem;
+      }
+      .blog-card-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      .blog-card-text {
+        font-size: 1rem;
+      }
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .mosaic-layout {
+        column-count: 3;
+        column-gap: 1rem;
+      }
+      .mosaic-layout .card {
+        break-inside: avoid;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">PT. Kadarisman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="todos.html">Todos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Our Blog</h2>
+      <div class="mosaic-layout">
+        <div class="card blog-card fade-in mb-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCOTXyyzeGZbE_bvcfNV57fGjfKHGqQsWDSw&s" class="card-img-top" alt="Blog Post 1" />
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">Understanding UI/UX</h5>
+            <p class="card-text blog-card-text">A deep dive into the principles of UI/UX design and how it impacts user satisfaction.</p>
+          </div>
+        </div>
+        <div class="card blog-card fade-in mb-4">
+          <img src="https://www.clariontech.com/hubfs/Top%208%20technologies%20transforming%20the%20future%20of%20web%20development%20Thumbnail.jpg" class="card-img-top" alt="Blog Post 2" />
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">The Future of Web Design</h5>
+            <p class="card-text blog-card-text">Exploring upcoming trends in web design and what to expect in the next few years.</p>
+          </div>
+        </div>
+        <div class="card blog-card fade-in mb-4">
+          <img src="https://www.hubspot.com/hs-fs/hubfs/user-testing_2.webp?width=650&height=301&name=user-testing_2.webp" class="card-img-top" alt="Blog Post 3" />
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">Effective User Testing</h5>
+            <p class="card-text blog-card-text">How to conduct user testing effectively to gather valuable feedback and improve your designs.</p>
+          </div>
+        </div>
+        <div class="card blog-card fade-in mb-4">
+          <img src="https://www.appsdevpro.com/blog/wp-content/uploads/2023/06/Best-Practices-for-Designing-Intuitive-User-Interfaces-on-Android.png" class="card-img-top" alt="Blog Post 4" />
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">Creating Intuitive Interfaces</h5>
+            <p class="card-text blog-card-text">Tips and techniques for designing interfaces that are intuitive and easy to use.</p>
+          </div>
+        </div>
+        <div class="card blog-card fade-in mb-4">
+          <img src="https://www.flyerdigi.com/blog/assets/img/photos/graphic-design-vs-ui-ux-design.jpg" class="card-img-top" alt="Blog Post 5" />
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">The Role of Graphic Design in UX</h5>
+            <p class="card-text blog-card-text">Understanding how graphic design complements UX design to create cohesive and engaging user experiences.</p>
+          </div>
+        </div>
+        <div class="card blog-card fade-in mb-4">
+          <img src="https://api.moonbite.pl/api/media/c/public/resize/1000/auto/fp/image-2019-02-26-10-20-41.png" class="card-img-top" alt="Blog Post 6" />
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">Innovative Design Solutions</h5>
+            <p class="card-text blog-card-text">Showcasing innovative design solutions that push the boundaries of traditional UX/UI practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 PT. Kadarisman. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
